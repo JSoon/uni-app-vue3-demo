@@ -11,6 +11,8 @@
       <uni-countdown :font-size="30" :day="1" :hour="2" :minute="30" :second="0" color="#FFFFFF"
         background-color="#007AFF" />
     </uni-section>
+
+    <navigator url="/pages/inspection/index"><button type="default">点检任务</button></navigator>
   </view>
 </template>
 

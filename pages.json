@@ -5,14 +5,19 @@
       "navigationBarTitleText": "首页"
     }
   }, {
+    "path": "pages/scan/index",
+    "style": {
+      "navigationBarTitleText": "扫码"
+    }
+  }, {
     "path": "pages/my/index",
     "style": {
       "navigationBarTitleText": "个人中心"
     }
   }, {
-    "path": "pages/scan/index",
+    "path": "pages/inspection/index",
     "style": {
-      "navigationBarTitleText": "扫码"
+      "navigationBarTitleText": "点检任务"
     }
   }],
   "tabBar": {
