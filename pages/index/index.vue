@@ -13,6 +13,8 @@
     </uni-section>
 
     <navigator url="/pages/inspection/index"><button type="default">点检任务</button></navigator>
+
+    <button @click="handleLogin">小程序登录</button>
   </view>
 </template>
 
@@ -23,6 +25,18 @@
   useCustomTabBar({ selected: 0 })
 
   const href = 'https://uniapp.dcloud.io/component/README?id=uniui'
+
+  function handleLogin() {
+    uni.login({
+      provider: 'weixin',
+      success: function (res) {
+        uni.showModal({
+          title: res.errMsg,
+          content: res.code
+        })
+      }
+    })
+  }
 </script>
 
 <style>
